@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Galindo&family=Gidole&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+main{
+    width: 100vw;
+    background-color: #faa2a2;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+.game{
+    width: 87vw;
+    height: 73%;
+    background-color: #bce5ef;
+    border-radius: 1rem 0rem 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 .6rem .6rem .6rem;
+}
+
+/* 🔥top styles */
+.top{
+    width: 100%;
+    border-radius: 1rem 0rem 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    background-color: #6ea4f4;
+    padding: .6rem;
+    height: 4vh;
+}
+.hit , .timer, .score{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: .9rem;
+}
+#score,#hit{
+    background-color: #fff;
+    text-align: center;
+    width: 2rem;
+    border-radius: .1rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+#timer{
+    background-color: #fff;
+    text-align: center;
+    width: 6rem;
+    border-radius: .1rem;
+    font-weight: bold;
+    font-size: .95rem;
+}
+
+/* 🔥bubbles styles */
+.bubbles{
+    display: flex;
+    flex-wrap: wrap;
+    padding: .5rem;
+    gap: .7rem;
+    font-weight: bold;
+}
+.bubble{
+    background-color: #fad38a;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.bubble:hover{
+    background-color: #f0bb59;
+}
+
+/* 🔥title styles */
+.title-card{
+    margin: auto;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .3rem;
+}
+
+.start{
+    cursor: pointer;
+    width: 5rem;
+    height: 1.6rem;
+    border: none;
+    background-color: #35fa70;
+    border-radius: .2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+.hide{
+    display: none;
+}
