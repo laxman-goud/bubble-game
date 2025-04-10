@@ -1,16 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Galindo&family=Gidole&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-*{
+
+* {
     padding: 0;
     margin: 0;
 }
-body{
+
+body {
     width: 100vw;
     height: 100vh;
 }
 
-main{
+body::-webkit-scrollbar {
+    display: none;
+}
+
+main {
     width: 100vw;
-    background-color: #faa2a2;
+
+    background: hsla(239, 100%, 67%, 1);
+
+    background: linear-gradient(90deg, hsla(239, 100%, 67%, 1) 0%, hsla(187, 100%, 89%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(239, 100%, 67%, 1) 0%, hsla(187, 100%, 89%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(239, 100%, 67%, 1) 0%, hsla(187, 100%, 89%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#595CFF", endColorstr="#C6F8FF", GradientType=1);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -19,36 +34,40 @@ main{
     font-weight: 400;
     font-style: normal;
 }
-.game{
+
+.game {
     width: 88%;
     height: 74%;
-    background-color: #bce5ef;
-    border-radius: 1rem 0rem 1rem 0;
+    background-color: #2ec4b6;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 .6rem .6rem .6rem;
-    overflow: scroll;
+    border-radius: 1rem 0 1rem 0;
 }
 
 /* 🔥top styles */
-.top{
+.top {
     width: 100%;
-    height: 8%;
-    border-radius: 1rem 0rem 1rem 0;
+    height: 46px;
     display: flex;
     justify-content: center;
     gap: 5rem;
-    background-color: #6ea4f4;
-    padding: .6rem;
+    background-color: #2ec4b6;
+    border-bottom: 1px solid black;
+    border-radius: 1rem 0 0 0;
 }
-.hit , .timer, .score{
+
+.hit,
+.timer,
+.score {
     display: flex;
     align-items: center;
     gap: 1rem;
     font-size: .9rem;
 }
-#score,#hit{
+
+#score,
+#hit {
     background-color: #fff;
     text-align: center;
     width: 2rem;
@@ -56,7 +75,8 @@ main{
     font-weight: bold;
     font-size: 1rem;
 }
-#timer{
+
+#timer {
     background-color: #fff;
     text-align: center;
     width: 6rem;
@@ -66,83 +86,83 @@ main{
 }
 
 /* 🔥bubbles styles */
-.bubbles{
+.bubbles {
     display: flex;
     flex-wrap: wrap;
-    padding: .5rem;
-    gap: .7rem;
-    font-weight: bold;
+    gap: 6px;
+    padding: 6px;
+    /* overflow: hidden; */
+    box-sizing: border-box;
 }
-.bubble{
-    background-color: #fad38a;
-    height: 3rem;
-    width: 3rem;
+
+.game::-webkit-scrollbar {
+    display: none;
+}
+
+.bubble {
+    width: 48px;
+    height: 48px;
+    background-color: #cbf3f0;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    border: 2px solid 38040e;
 }
-.bubble:hover{
-    background-color: #f0bb59;
+
+
+.bubble:hover {
+    background-color: #57cc99;
 }
 
 /* 🔥title styles */
-.title-card{
+.title-card {
     margin: auto;
     cursor: pointer;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: .3rem;
+    padding: 8px;
 }
 
-.start{
+.start {
     cursor: pointer;
-    width: 5rem;
-    height: 1.6rem;
+    width: 8rem;
+    height: 2.6rem;
     border: none;
-    background-color: #35fa70;
+    background-color: #ff9f1c;
     border-radius: .2rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.hide{
+
+.hide {
     display: none;
 }
 
 /* 🔥responsive styles */
 
-@media (max-width:500px) {
-    .top{
-        height: 90px;
-        flex-direction: column;
-        gap: 0;
-        align-items: center;
-        padding: .2rem;
-        border-radius: 0;
+@media (max-width:680px) {
+    .top {
+        gap: 4px;
     }
-    .hit , .timer, .score{
+
+    .hit,
+    .timer,
+    .score {
         display: flex;
         align-items: center;
-        gap: .7rem;
-        font-size: .7rem;
+        gap: .1rem;
+        font-size: .65rem;
     }
-    .game{
-        box-sizing: border-box;
-        width: 100%;
-        height: 100%;
-        padding: 0;
-        border-radius: 0;
-        padding: 2px;
-        overflow: scroll;
+
+    .game {
+        width: 95%;
+        height: 85%;
     }
-    .bubbles{
-        padding: 2px;
-        gap: 2px;
+
+    .bubbles {
         font-weight: bold;
-    }
-    .bubble{
-        width: 50px; 
-        height: 50px; 
     }
 }
