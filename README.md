@@ -34,11 +34,21 @@ A fun and interactive bubble-popping game built using **HTML**, **CSS**, and **J
 - `style.css` – Styling for the game UI  
 - `script.js` – JavaScript logic for gameplay and event handling
 
+## 🤝 Contributing
+
+Contributions are welcome! 🎉  
+
+Feel free to **fork this project**, open an **issue**, or submit a **pull request** with your improvements.  
+Please make sure your changes are clear, concise, and follow the contributing guidelines. 
+
+
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
 ## 👤 Author
 
 **Laxman Goud**  
 GitHub: [@laxman-goud](https://github.com/laxman-goud)
 
 ---
-
-Enjoy the game and feel free to contribute or suggest improvements!
